@@ -1,0 +1,138 @@
+---
+
+---
+
+<header
+  class="fixed flex flex-direction:row items-center justify-between w-full border-[1px] border-b-gray-400 bg-white h-[20vh] z-10"
+>
+  <a class="text-center max-md:w-1/2 z-10 w-1/4" href="#inicio">
+    <img
+      src="../../public/YogaPalermo-Logo.png"
+      alt="logo Yoga Palermo"
+      srcset=""
+      class="max-w-40 display-block mx-auto my-0 scale-110 cursor-pointer z-4"
+    />
+  </a>
+  <nav
+    class="flex flex-row items-center justify-center text-center w-1/2 gap-6 max-md:hidden"
+  >
+    <a
+      class="hover:scale-110 hover:border-b-2 hover:border-orange-600 duration-150"
+      href="/#inicio">Inicio</a
+    >
+    <a
+      class="hover:scale-110 hover:border-b-2 hover:border-orange-600 duration-150"
+      href="/#clases">Clases</a
+    >
+    <a
+      class="hover:scale-110 hover:border-b-2 hover:border-orange-600 duration-150"
+      href="/">Contacto</a
+    >
+  </nav>
+  <button
+    class="max-md:hidden w-1/4 text-white hover:scale-110 duration-100 hover:rotate-3"
+  >
+    <span
+      class="w-[80%] bg-orange-500 rounded-2xl px-4 py-2 hover:bg-violet-600 ease-in-out duration-75"
+    >
+      Reservar Clase</span
+    >
+  </button>
+
+  <!-- Button Mobile -->
+
+  <button
+    id="menu-Open"
+    class="md:hidden xl:hidden lg:hidden mx-auto md:w-1/2 sm:w-1/2"
+    ><svg
+      class="text-center display-block mx-auto my-0"
+      id="menu-button"
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-stretching"
+      width="44"
+      height="44"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="#2c3e50"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M16 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      <path d="M5 20l5 -.5l1 -2"></path>
+      <path d="M18 20v-5h-5.5l2.5 -6.5l-5.5 1l1.5 2"></path>
+    </svg></button
+  >
+  <button
+    id="menu-Close"
+    class="hidden z-10 md:hidden xl:hidden lg:hidden mx-auto w-1/2"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="text-center display-block mx-auto my-0 fill-orange-600"
+      width="44"
+      height="44"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="#2c3e50"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M18 6l-12 12"></path>
+      <path d="M6 6l12 12"></path></svg
+    ></button
+  >
+
+  <!-- Version Mobile -->
+
+  <div
+    id="mobile-menu"
+    class="h-[70vh] w-[100%] hidden fixed left-0 top-0 border-y-[1px] border-black min-[768px]:hidden"
+  >
+    <div
+      class="flex flex-col h-[100%] items-center justify-center
+      bg-white text-black gap-10 text-start pt-[15vh] pl-[10%]"
+    >
+      <a href="#" class="text-md block h-auto w-full"
+        ><span class="hover:border-b-2 hover:border-orange-600 duration-150">
+          Inicio</span
+        ></a
+      >
+      <a href="#" class="w-full text-md h-auto block">
+        <span class="hover:border-b-2 border-orange-600 duration-150"
+          >Clases</span
+        ></a
+      >
+      <a href="#" class="w-full text-md h-auto block"
+        ><span class="hover:border-b-2 hover:border-orange-600 duration-150">
+          Contacto</span
+        ></a
+      >
+      <a href="#" class="w-full h-auto text-md block text-white">
+        <span class="bg-orange-500 rounded-2xl px-4 py-2">Rerservar Clase</span
+        ></a
+      >
+    </div>
+  </div>
+</header>
+<script>
+  const openNav = document.querySelector("#mobile-menu");
+  const buttonOpen = document.querySelector("#menu-Open");
+  const buttonClose = document.querySelector("#menu-Close");
+
+  buttonOpen.addEventListener("click", () => {
+    openNav.classList.remove("hidden");
+    buttonClose.classList.remove("hidden");
+    buttonOpen.classList.add("hidden", "duration-100");
+  });
+
+  const close = document.querySelector("#menu-Close");
+  close.addEventListener("click", () => {
+    openNav.classList.add("hidden");
+    buttonOpen.classList.remove("hidden");
+    buttonClose.classList.add("hidden");
+  });
+</script>
