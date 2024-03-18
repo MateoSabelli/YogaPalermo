@@ -3,39 +3,37 @@
 ---
 
 <main
-  class="h-[100vh] w-[100%] pt-[17vh] flex items-center justify-center gap-5 max-sm:flex-col max-sm:h-auto"
+  class="h-auto w-full pt-[17vh] grid grid-cols-2 items-center justify-center gap-5 md:flex-col sm:flex-col"
 >
   <div
-    class="w-2/6 h-auto flex flex-col justify-center text-start text-black sm:h-3/4 max-sm:w-full max-sm:ml-24 sm:justify-start"
+    class="ml-16x w-auto h-auto flex flex-col justify-center text-start text-black sm:h-3/4 max-sm:w-full max-sm:ml-24 sm:justify-start"
   >
     <h1 class="text-7xl w-full">
       <span class="font-[500]"> Yoga</span>
       <br />
-      <span class="text-base font-medium">& Meditacion</span>
     </h1>
+    <em class="text-base font-medium pt-6">& Meditacion</em>
     <h2 class="text-start opacity-70 pt-6 my-9 sm:my-2 sm:text-sm max-sm:w-3/4">
       El objetivo de practicar yoga es cultivar la armonía entre la mente, el
       cuerpo y el espíritu, promoviendo la salud, la relajación y el bienestar
       físico y mental.
     </h2>
 
-    <button
-      class="text-start text-white pt-8 hover:scale-110 hover:rotate-3 duration-100"
-    >
+    <button class="text-start pt-5 text-white h-auto max-md:hidden">
       <span
-        class="bg-orange-500 rounded-2xl px-4 py-2 hover:bg-violet-600 ease-in-out duration-75"
+        class="bg-orange-500 rounded-2xl px-4 py-2 hover:scale-110 hover:rotate-3 hover:bg-violet-600 ease-in-out duration-75"
       >
         Reservar Clase</span
       >
     </button>
   </div>
   <picture
-    class="w-5/12 h-full sm:h-1/4 flex justify-center items-center hover:scale-105 transition-all duration-50 max-sm:overflow-visible max-sm:w-full"
+    class="h-auto sm:h-1/4 flex justify-center items-center max-sm:overflow-visible"
   >
     <img
       src="/5180214.jpg"
       alt="Imagen-Inicio"
-      class="w-[500px] rounded-full hover:shadow-orange-500 border-black/30 border-[1px] shadow-lg"
+      class="w-[500px] rounded-3xl roun shadow-lg"
     />
   </picture>
 </main>
